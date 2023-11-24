@@ -1,0 +1,1 @@
+ffmpeg -v verbose  -i rtsp://rtspstream:40de0cc6d66b5deaede5528474f58252@zephyr.rtsp.stream/movie -vf scale=1920:1080  -vcodec libx264 -r 25 -b:v 1000000 -crf 31 -acodec aac  -sc_threshold 0 -f hls  -hls_time 5  -segment_time 5 -hls_list_size 5 D:\Pooh\RTSP\WEB-RTSP\videos\stream.m3u8
